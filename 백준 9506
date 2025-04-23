@@ -10,4 +10,4 @@ while True:
     if sum(lst) == a:
         print("{} = {}".format(a, " + ".join(map(str, lst))))
     else:
-        print("{} is NOT perfect".format(a))
+        print("{} is NOT perfect.".format(a))
