@@ -1,0 +1,13 @@
+while True:
+    a = int(input())
+    if a == -1:
+        break
+    i, lst = 2, [1]
+    while i <= a // 2:
+        if a % i == 0:
+            lst.append(i)
+        i += 1
+    if sum(lst) == a:
+        print("{} = {}".format(a, " + ".join(map(str, lst))))
+    else:
+        print("{} is NOT perfect".format(a))
